@@ -158,7 +158,6 @@ Thanks to octonode for the inspiration to make this API in coffeescript.
 
 # Next Steps
 * integrate with travis properly
-* pass in scope?
 * Rate limiting helper method
 * More helper methods!!
 * Flesh out me.coffee (should just call user with __SELF__) with tests
