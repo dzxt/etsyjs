@@ -1,11 +1,17 @@
 {
-  "name": "etsy-js",
+  "name": "etsyjs",
   "description": "An asynchronous nodejs wrapper for the etsy v2 api.",
-  "version": "0.0.5",
+  "version": "0.0.6",
+  "license": "MIT",
+  "author": {
+    "name": "Darren Pulsipher",
+    "email": "darren@pulsipher.org",
+    "url": "http://www.pulsipher.org"
+  },
   "main": "./lib/etsyjs",
   "repository": {
     "type": "git",
-    "url": "git@github.com:GeorgiCodes/etsy-js.git"
+    "url": "git@github.com:madajaju/etsy-js.git"
   },
   "scripts": {},
   "dependencies": {
