@@ -20,9 +20,13 @@ class Client
     @apiKey = @options.key
     @apiSecret = @options.secret
     @callbackURL = @options.callbackURL
+    @scope = @options.scope
+
+    if !@scope then @scope = 'email_r%20profile_r%20profile_w%20address_r%20address_w'
+
     @request = request
     @etsyOAuth = new OAuth.OAuth(
-      'https://openapi.etsy.com/v2/oauth/request_token?scope=email_r%20profile_r%20profile_w%20address_r%20address_w',
+      "https://openapi.etsy.com/v2/oauth/request_token?scope=#{@scope}",
       'https://openapi.etsy.com/v2/oauth/access_token',
       "#{@apiKey}",
       "#{@apiSecret}",

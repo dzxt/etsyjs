@@ -10,6 +10,7 @@
   "scripts": {},
   "dependencies": {
     "coffee-script": "1.7.x",
+    "grunt-cli": "^0.1.13",
     "oauth": "0.9.x",
     "prettyjson": "1.0.x",
     "request": "2.34.x"

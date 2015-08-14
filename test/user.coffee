@@ -1,7 +1,7 @@
 nock = require "nock"
 should = require("chai").should()
 etsyjs = require "../lib/etsyjs"
-client = etsyjs.client({key:'testKey'})
+client = etsyjs.client({key:'testKey', scope:'email_r%20profile_r%20profile_w%20address_r%20address_w'})
 
 describe "user", ->
 
