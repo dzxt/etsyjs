@@ -1,5 +1,6 @@
 etsy-js
 =======
+Thanks to GeorgiCodes for the orginal code.
 
 etsy-js is an asynchronous nodeJS wrapper for the etsy v2 api.
 
@@ -51,11 +52,13 @@ var etsyjs = require('etsy-js');
 var client = etsyjs.client({
   key: 'key',
   secret: 'secret',
-  callbackURL: 'http://localhost:3000/authorise'
+  callbackURL: 'http://localhost:3000/authorise',
+  scope: 'email_r%20profile_r%20profile_w%20address_r%20address_w'
 });
 ```
 
 In this mode, you'll need to store the request token and secret before redirecting to the verification URL.
+This also sets the scope for the client to access your etsy shop.
 A simple example in coffeescript using Express and Express Sessions:
 ```js
 express = require('express')
@@ -69,6 +72,7 @@ client = etsyjs.client
   key: nconf.get('key')
   secret: nconf.get('secret')
   callbackURL: 'http://localhost:3000/authorise'
+  scope: 'email_r%20profile_r%20profile_w%20address_r%20address_w'
 
 app = express()
 app.use(cookieParser('secEtsy'))
