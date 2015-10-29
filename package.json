@@ -1,7 +1,7 @@
 {
-  "name": "etsyjs",
+  "name": "etsyjs2",
   "description": "An asynchronous nodejs wrapper for the etsy v2 api.",
-  "version": "0.0.6",
+  "version": "1.0.1",
   "license": "MIT",
   "author": {
     "name": "Darren Pulsipher",
